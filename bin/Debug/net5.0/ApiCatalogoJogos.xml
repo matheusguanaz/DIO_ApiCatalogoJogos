@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiCatalogoJogos</name>
+    </assembly>
+    <members>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.Obter(System.Int32,System.Int32)">
+            <summary>
+            Busca todos os jogos de forma paginada
+            </summary>
+            <param name="pagina"> Indica qual a página está sendo consultada, minimo 1</param>
+            <param name="quantidade">indica a quantidade máxima que irá aparecer por página, min 1, max 50 </param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.Obter(System.Guid)">
+            <summary>
+            Busca um único jogo através do id
+            </summary>
+            <param name="idJogo">Guid que representa o jogo</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.InserirJogo(ApiCatalogoJogos.InputModels.JogoInputModel)">
+            <summary>
+            Insere um jogo no catálogo
+            </summary>
+            <param name="jogoInputModel">um JSON que representa o jogo, contendo nome, produtora e preço</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,ApiCatalogoJogos.InputModels.JogoInputModel)">
+            <summary>
+            Alterar um jogo no catálogo
+            </summary>
+            <param name="idJogo"></param>
+            <param name="jogoInputModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,System.Double)">
+            <summary>
+            Alterar apenas o preço de um jogo
+            </summary>
+            <param name="idJogo"></param>
+            <param name="preco"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.JogosController.ExcluirJogo(System.Guid)">
+            <summary>
+            Remover um jogo do catálogo
+            </summary>
+            <param name="idJogo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
